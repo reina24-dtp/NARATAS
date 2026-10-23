@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink, Route, Routes, Link } from 'react-router-dom'
-import { BarChart3, CalendarDays, CalendarRange, ClipboardCheck, GraduationCap, LayoutDashboard, School, SearchX, UserRound } from 'lucide-react'
+import { BarChart3, CalendarDays, CalendarRange, ClipboardCheck, GraduationCap, LayoutDashboard, School, SearchX } from 'lucide-react'
 import { SEMESTER } from './config'
 import { Empty, Logo, Splash, ToastProvider } from './components/ui'
 import Dashboard from './pages/Dashboard'
@@ -30,7 +30,6 @@ export default function App() {
         <Link to="/" className="brand" aria-label="NARATAS, ke dashboard"><Logo height={40} /></Link>
         <div className="top-right">
           <span className="sem"><CalendarRange size={16} />{SEMESTER}</span>
-          <span className="me" aria-hidden="true"><UserRound size={18} /></span>
         </div>
       </header>
       <div className="shell">

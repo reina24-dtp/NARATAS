@@ -20,7 +20,6 @@ h2 svg{color:var(--blue)}h3{margin:0 0 4px}
 .top-right{display:flex;align-items:center;gap:14px}
 .sem{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--navy);padding:7px 14px;border-radius:99px;font-size:.85rem;font-weight:600}
 .sem svg{color:var(--blue)}
-.me{width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;border:3px solid var(--soft)}
 .shell{display:flex;padding-top:var(--top);min-height:100vh}
 .side{width:var(--side);flex:none;position:fixed;top:var(--top);bottom:0;left:0;background:var(--blue);padding:28px 0 24px 18px;overflow-y:auto}
 .side nav{display:flex;flex-direction:column;gap:8px}

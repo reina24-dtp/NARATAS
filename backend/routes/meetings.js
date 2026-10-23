@@ -13,7 +13,7 @@ router.get('/:id', async (req, res) => {
     const m = await pool.query(
       `SELECT m.id, m.class_id, m.meeting_number,
               to_char(m.meeting_date, 'YYYY-MM-DD') AS meeting_date,
-              c.course_name, c.class_name
+                c.course_name, c.class_name, c.lecturer
        FROM meetings m JOIN classes c ON c.id = m.class_id
        WHERE m.id = $1`,
       [req.params.id]
